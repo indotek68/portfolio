@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angga's Portfolio</title>  
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/device-mockups.css" />
+
+
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/ui-bootstrap.min.js"></script>
+	<script src="./js/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+	<script src="script.js"></script>
+
+</head>
+<body ng-app='myPortfolio'>
+	<div class="container-fluid">
+		<div class="row footer">
+			<div class="col-xs-2 col-sm-2 col-md-2 sidebar inner-shadow">
+				<p class="name">ANGGA PUTRA</p>
+				<p class="title">@incrediferous</p>
+				<p class="title">DESIGNER/ WEB DEVELOPER</p>
+				<p class="summary">
+				DESIGN DRIVEN DEVELOPER, SOLVING COMPLEXITIES OF THE BUILT ENVIRONMENT THROUGH ELEGANT AND CREATIVE SOLUTIONS
+				</p>
+				<div class="social">
+					<a class=""><i class="fa fa-github-alt fa-md"></i></a>
+					<a class=""><i class="fa fa-linkedin fa-md"></i></a>
+					<a class=""><i class="fa fa-twitter fa-md"></i></a>
+					<a class=""><i class="fa fa-tumblr fa-md"></i></a> 
+					<a class=""><i class="fa fa-flickr fa-md"></i></a>
+					<a class=""><i class="fa fa-instagram fa-md"></i></a>
+				</div>  
+				<div class="info">
+					<p>
+						<i class="fa fa-map-marker"></i><span>san francisco, ca</span>
+					</p>
+					<p>
+						<i class="fa fa-envelope"></i><span>angga.w.putra@gmail.com</span>
+					</p>
+					<p>
+						<i class="fa fa-external-link"></i><a href="https://profiles.generalassemb.ly/angga-putra">general-assembly</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-10 col-sm-10 col-sm-offset-2 col-xs-offset-2 col-md-10 col-md-offset-2 padding-zero" ng-controller="Ctrl">
+			<nav class="navbar navbar-default nav-top">
+				<div class="">
+					<ul class="nav navbar-nav nav-style">
+						<li class="text-center" ng-click="getTemplate('aboutMe')"><a href="javascript:void(0);"><i class="fa fa-user fa-2x"></i><p>About Me</p></a></li>
+
+						<li class="text-center" ng-click="getTemplate('resume')"><a href="javascript:void(0);"><i class="fa fa-file-text fa-2x"></i><p>Resume</p></a></li>
+
+						<li class="text-center" ng-click="getTemplate('webDev')"><a href="javascript:void(0);"><i class="fa fa-globe fa-2x"></i><p>Web Dev</p></a></li>
+						<li class="text-center" ng-click="getTemplate('ux')"><a href="javascript:void(0);"><i class="fa fa-gears fa-2x"></i><p>UX</p></a></li>
+						<li class="text-center" ng-click="getTemplate('architecture')"><a href="javascript:void(0);"><i class="fa fa-institution fa-2x"></i><p>Architecture</p></a></li>
+						<li class="text-center" ng-click="getTemplate('sketch')"><a href="javascript:void(0);"><i class="fa fa-pencil fa-2x"></i><p>Sketches</p></a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- put partials here -->
+			<div ng-include src="template.url"></div>
+			<!-- end of partials -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
