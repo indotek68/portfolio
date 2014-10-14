@@ -26,7 +26,7 @@ angular.module('myPortfolio', ['ui.bootstrap'])
 				url: 'partials/_sketch.html'
 			}];
 		
-		$scope.template = $scope.templates[2];
+		$scope.template = $scope.templates[0];
 
 		$scope.getTemplate = function(temp){
 			// console.log("hello")

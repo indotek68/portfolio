@@ -2,6 +2,12 @@ body{
 	background-color: #f4f4f4;
 }
 
+.ux-img{
+	float: left;
+	padding: 1em 1em;
+	width: 50%;
+}
+
 .row-divider{
 	margin-top: 1em;
 	border-top: dotted 2px #ccc;
@@ -9,7 +15,7 @@ body{
 }
 
 .iPhone{
-	width: 50%;
+	width: 33%;
 	float: left;
 }
 
@@ -154,7 +160,7 @@ body{
 }
 
 .summary{
-	font-size: .85em;
+	font-size: 1em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #8f8f8f;
